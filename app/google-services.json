@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790524289195",
+    "project_id": "newsfeed-f5252",
+    "storage_bucket": "newsfeed-f5252.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790524289195:android:34e7b24ff4e1b8567a17ee",
+        "android_client_info": {
+          "package_name": "com.android.developer.prof.reda.voyagex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790524289195-vjqouaubp0lasmpqe89hh845v1l9b8hd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK53APb_znACabZozLZE3a76S4oDUhwW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790524289195-vjqouaubp0lasmpqe89hh845v1l9b8hd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

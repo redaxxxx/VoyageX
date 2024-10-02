@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VoyageX</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="intro_title">Explorer the <font color="#3f95ec">\n World </font> with us</string>
+
+    <string name="subIntro">Plan your perfect getaway with\n personalized itineraries and local tips.</string>
+
+</resources>
