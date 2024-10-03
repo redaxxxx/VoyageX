@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.android.developer.prof.reda.voyagex.databinding.BannerViewHolderBinding
 import com.bumptech.glide.Glide
 
-class SliderAdapter: ListAdapter<SliderModel, SliderAdapter.SliderViewHolder> (DiffCallback) {
+class SliderAdapter: ListAdapter<SliderModel, SliderAdapter.SliderViewHolder> (SliderDiffCallback) {
 
     inner class SliderViewHolder(private val binding: BannerViewHolderBinding): ViewHolder(binding.root){
         fun bind(slider: SliderModel){
@@ -17,17 +17,6 @@ class SliderAdapter: ListAdapter<SliderModel, SliderAdapter.SliderViewHolder> (D
                 .load(slider.url)
                 .into(binding.bannerImg)
         }
-    }
-
-    companion object DiffCallback: DiffUtil.ItemCallback<SliderModel>(){
-        override fun areItemsTheSame(oldItem: SliderModel, newItem: SliderModel): Boolean {
-            return oldItem == newItem
-        }
-
-        override fun areContentsTheSame(oldItem: SliderModel, newItem: SliderModel): Boolean {
-            return oldItem.url == newItem.url
-        }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SliderViewHolder {

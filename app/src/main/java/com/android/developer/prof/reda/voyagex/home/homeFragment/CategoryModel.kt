@@ -5,13 +5,15 @@ import com.android.developer.prof.reda.voyagex.util.GenericDiffUtil
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class SliderModel(
-    val url: String
+data class CategoryModel(
+    val Id: Int,
+    val ImagePath:  String,
+    val Name: String
 ): Parcelable{
-    constructor(): this("")
+    constructor(): this(0, "", "")
 }
 
-val SliderDiffCallback = GenericDiffUtil<SliderModel>(
-    areItemsSame = {oldItem, newItem -> oldItem.url == newItem.url },
+val CategoryDiffCallback = GenericDiffUtil<CategoryModel>(
+    areItemsSame = {oldItem, newItem -> oldItem.Id == newItem.Id },
     areContentSame = {oldItem, newItem -> oldItem == newItem }
 )
