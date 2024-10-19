@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home.homeFragment.HomeFragment">
+        tools:context=".ui.fragments.HomeFragment">
 
         <ScrollView
             android:layout_width="0dp"
@@ -112,19 +112,30 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp">
 
+                    <ProgressBar
+                        android:id="@+id/progressBar_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/category_rv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         android:orientation="horizontal"
                         android:clipToPadding="false"
                         tools:listitem="@layout/category_view_holder" />
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -156,8 +167,10 @@
                     android:layout_marginTop="8dp">
 
                     <ProgressBar
+                        android:id="@+id/progressBar_recommend"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -169,6 +182,7 @@
                         android:layout_height="match_parent"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         android:orientation="horizontal"
+                        android:clipToPadding="false"
                         tools:listitem="@layout/recommended_view_holder" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -203,8 +217,10 @@
                     android:layout_marginTop="8dp">
 
                     <ProgressBar
+                        android:id="@+id/progressBar_popular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -251,5 +267,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.975216853" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.VoyageX" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/blue</item>
     </style>
 
     <style name="Theme.VoyageX" parent="Base.Theme.VoyageX" />
+
 </resources>

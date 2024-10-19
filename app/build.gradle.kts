@@ -43,6 +43,7 @@ android {
     buildFeatures{
         dataBinding = true
     }
+
 }
 
 dependencies {
@@ -52,6 +53,7 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.firebase:firebase-database:21.0.0")
+    implementation("androidx.test.ext:junit-ktx:1.2.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
@@ -75,8 +77,37 @@ dependencies {
     implementation ("com.google.dagger:hilt-android:2.50")
     kapt ("com.google.dagger:hilt-compiler:2.50")
 
+    //circular image
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    // Logging
+    implementation ("com.jakewharton.timber:timber:5.0.1")
+
     //Coroutines with firebase
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1")
+
+    //splash screen
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+    // JUnit and Mockito for unit testing
+    testImplementation ("org.mockito:mockito-core:4.0.0")
+    testImplementation ("org.mockito:mockito-inline:3.9.0")
+    testImplementation ("org.mockito.kotlin:mockito-kotlin:4.0.0")
+
+
+    //Coroutines test
+    androidTestImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+    //Turbine
+    testImplementation ("app.cash.turbine:turbine:0.7.0")
+
+    // Hilt testing utilities
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.44")
+    kaptAndroidTest ("com.google.dagger:hilt-android-compiler:2.44")
+
+    // For Robolectric tests.
+    testImplementation("com.google.dagger:hilt-android-testing:2.44")
 }
 kapt{
     correctErrorTypes = true

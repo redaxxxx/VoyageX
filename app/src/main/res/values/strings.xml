@@ -6,5 +6,23 @@
     <string name="intro_title">Explorer the <font color="#3f95ec">\n World </font> with us</string>
 
     <string name="subIntro">Plan your perfect getaway with\n personalized itineraries and local tips.</string>
+    <string name="show_ticket_text">show this ticket to the your guide departure</string>
+    <string name="sign_in_now">Sign in now</string>
+    <string name="please_sign_in_to_continue_our_app">Please sign in to continue our app</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or_connect_text">Or connect</string>
+    <string name="sign_up_now">Sign up now</string>
+    <string name="please_fill_the_details_and_create_account">Please fill the details and create account</string>
+    <string name="username_hint">Username</string>
+    <string name="password_must_be_8_character">Password must be 8 character</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot Passowrd</string>
+    <string name="enter_your_email_account_to_reset_your_password">Enter your email account to reset your password</string>
+    <string name="reset_password">Reset Password</string>
 
 </resources>
