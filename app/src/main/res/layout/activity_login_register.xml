@@ -13,10 +13,15 @@
         tools:context=".ui.activities.LoginRegisterActivity">
 
         <androidx.fragment.app.FragmentContainerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            style="androidx.navigation.fragment.NavHostFragment"
+            android:id="@+id/fragmentContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:defaultNavHost="true"
             app:navGraph="@navigation/register_login_nav"
-            app:defaultNavHost="true"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
