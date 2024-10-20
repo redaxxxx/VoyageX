@@ -21,6 +21,7 @@ VoyageX is an intuitive and feature-rich mobile application designed to simplify
 * Timber
 
 ### Screenshots
+<div>
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/intro.jpeg" width="150" title="Intro Screen">
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/login.jpeg" width="150" title="Login Screen">
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/register.jpeg" width="150" title="Register Screen">
@@ -28,3 +29,4 @@ VoyageX is an intuitive and feature-rich mobile application designed to simplify
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/detail.jpeg" width="150" title="Detail Screen">
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/ticket%201.jpeg" width="150" title="Detail Ticket Screen">
 <img src="https://github.com/redaxxxx/VoyageX/blob/master/ticket%202.jpeg" width="150" title="Detail Ticket Screen">
+</div>
