@@ -1,6 +1,9 @@
 ## VoyageX Travel App
 VoyageX is an intuitive and feature-rich mobile application designed to simplify travel planning and enhance the overall travel experience. The app offers users the ability to explore destinations, book hotels, flights, and activities, and create personalized itineraries. With its sleek design and user-friendly interface, VoyageX makes travel planning easier and more enjoyable.
 
+## Status: Work in Progress 🚧
+This app is still under development, and new features are being added regularly. Expect frequent updates and improvements.
+
 ### Features
 * Discover Destinations: Browse and explore various destinations worldwide with detailed descriptions, reviews, and ratings.
 * Flight and Hotel Booking: Search, compare, and book flights and hotels with real-time availability and pricing.
