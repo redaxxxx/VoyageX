@@ -4,14 +4,14 @@ VoyageX is an intuitive and feature-rich mobile application designed to simplify
 ## Status: Work in Progress 🚧
 This app is still under development, and new features are being added regularly. Expect frequent updates and improvements.
 
-### Features
+## Features
 * Discover Destinations: Browse and explore various destinations worldwide with detailed descriptions, reviews, and ratings.
 * Flight and Hotel Booking: Search, compare, and book flights and hotels with real-time availability and pricing.
 * Personalized Itineraries: Create and manage your travel itinerary by adding flights, accommodations, activities, and points of interest.
 * Real-Time Notifications: Get updates on flight statuses, check-in reminders, and weather conditions at your destination.
 * Travel Deals: Receive exclusive deals and discounts on hotels, flights, and holiday packages.
   
-### Technologies Used
+## Technologies Used
 * Kotlin: Main programming language for Android development.
 * Firebase Firestore: For storing user data and trip information.
 * Firebase Database: For fetching flight and hotel data.
