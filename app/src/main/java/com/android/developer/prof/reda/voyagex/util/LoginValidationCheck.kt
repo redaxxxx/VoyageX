@@ -13,16 +13,3 @@ fun validateLoginEmail(email: String): LoginValidation{
     }
     return LoginValidation.Success
 }
-
-fun validateLoginPassword(password: String): LoginValidation{
-    val passwordPattern = Regex("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$")
-
-    if (password.isEmpty()){
-        return LoginValidation.Failed("Password cannot be empty")
-    }
-    if (!password.matches(passwordPattern)){
-        return LoginValidation.Failed("Password must be at least 8 characters long and contain both letters and numbers")
-    }
-
-    return LoginValidation.Success
-}

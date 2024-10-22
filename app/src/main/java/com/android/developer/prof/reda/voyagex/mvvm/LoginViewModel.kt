@@ -6,7 +6,6 @@ import com.android.developer.prof.reda.voyagex.util.LoginFailedState
 import com.android.developer.prof.reda.voyagex.util.LoginValidation
 import com.android.developer.prof.reda.voyagex.util.Resources
 import com.android.developer.prof.reda.voyagex.util.validateLoginEmail
-import com.android.developer.prof.reda.voyagex.util.validateLoginPassword
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -35,7 +34,7 @@ class LoginViewModel @Inject constructor(
                 _login.emit(Resources.Loading())
             }
 
-            firebaseAuth.createUserWithEmailAndPassword(email, password)
+            firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
                     viewModelScope.launch {
                         _login.emit(Resources.Success(it.user))
@@ -48,7 +47,6 @@ class LoginViewModel @Inject constructor(
         }else{
             val loginFailedState = LoginFailedState(
                 validateLoginEmail(email),
-                validateLoginPassword(password)
             )
 
             runBlocking {
@@ -59,9 +57,7 @@ class LoginViewModel @Inject constructor(
 
     private fun checkValidation(email: String, password: String): Boolean{
         val emailValidation = validateLoginEmail(email)
-        val passwordValidation = validateLoginPassword(password)
 
-        return emailValidation is LoginValidation.Success &&
-                passwordValidation is LoginValidation.Success
+        return emailValidation is LoginValidation.Success
     }
 }

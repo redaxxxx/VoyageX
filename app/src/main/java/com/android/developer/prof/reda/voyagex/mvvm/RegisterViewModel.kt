@@ -5,12 +5,9 @@ import androidx.lifecycle.viewModelScope
 import com.android.developer.prof.reda.voyagex.models.User
 import com.android.developer.prof.reda.voyagex.util.COUNTERS_DOC
 import com.android.developer.prof.reda.voyagex.util.COUNTERS_REF
-import com.android.developer.prof.reda.voyagex.util.LoginFailedState
 import com.android.developer.prof.reda.voyagex.util.RegisterFailedState
 import com.android.developer.prof.reda.voyagex.util.RegisterValidation
 import com.android.developer.prof.reda.voyagex.util.Resources
-import com.android.developer.prof.reda.voyagex.util.validateLoginEmail
-import com.android.developer.prof.reda.voyagex.util.validateLoginPassword
 import com.android.developer.prof.reda.voyagex.util.validateRegisterEmail
 import com.android.developer.prof.reda.voyagex.util.validateRegisterPassword
 import com.android.developer.prof.reda.voyagex.util.validateRegisterUsername
@@ -24,6 +21,7 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
+
 @HiltViewModel
 class RegisterViewModel @Inject constructor(
     private val firesotre: FirebaseFirestore,

@@ -74,6 +74,7 @@ class LoginFragment : Fragment() {
                         }
 
                         startActivity(intent)
+                        activity?.finish()
                     }
                     is Resources.Failed ->{
                         binding.loginProgressBar.visibility = View.GONE
@@ -92,15 +93,6 @@ class LoginFragment : Fragment() {
                         binding.emailEt.apply {
                             requestFocus()
                             error = it.email.message
-                        }
-                    }
-                }
-
-                if (it.password is LoginValidation.Failed){
-                    withContext(Dispatchers.Main){
-                        binding.passwordEt.apply {
-                            requestFocus()
-                            error = it.password.message
                         }
                     }
                 }

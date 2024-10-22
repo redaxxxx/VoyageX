@@ -28,12 +28,12 @@ fun validateRegisterEmail(email: String): RegisterValidation{
 }
 
 fun validateRegisterPassword(password: String): RegisterValidation{
-    val passwordPattern = Regex("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$")
+    val passwordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$%^&+=!])(?=\\S+\$).{8,}\$"
 
     if (password.isEmpty()){
         return RegisterValidation.Failed("Password cannot be empty")
     }
-    if (!password.matches(passwordPattern)){
+    if (!password.matches(Regex(passwordPattern))){
         return RegisterValidation.Failed("Password must be at least 8 characters long and contain both letters and numbers")
     }
 

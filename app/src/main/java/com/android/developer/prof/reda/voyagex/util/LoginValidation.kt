@@ -7,5 +7,4 @@ sealed class LoginValidation {
 
 data class LoginFailedState(
     val email: LoginValidation,
-    val password: LoginValidation
 )
